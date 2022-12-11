@@ -23,7 +23,7 @@ const contentStyle = {
   textAlign: 'center',
   background: '#364d79',
   paddingTop:'50px',
-  width:'100%',
+  //width:'100%',
 };
  const items1= [
     {key: 'nav1', label: 'Home'},
@@ -32,7 +32,9 @@ const contentStyle = {
     children: [{key:'subnav1_opt1', label:'Sports',children : [{key:'subnav2_opt1',label:'Football'},{key:'subnav2_opt1',label:"Cricket"},{key:'subnav2_opt1',label:"Tennis"}]},
                {key:'subnav2_opt1', label:'Interests',children:[{key:'subnav2_opt1',label:'Gaming'},{key:'subnav2_opt1',label:'Photography'},{key:'subnav2_opt1',label:'Painting'}]}]
     },
-    {key: 'nav4', label: 'Thank it forward'},
+    {key:'nav4',label:<form className="flex" role="search">
+    <button className="btn btn-primary" type="button">Thank it forward</button>
+    </form>},
     {key:'nav5',className:"find",label:<form className="d-flex" role="search">
     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
     <button className="btn btn-outline-success" type="submit">Search</button>,
@@ -62,7 +64,7 @@ const items2 = [
         key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
         children: [
             {key: 'subnav1_opt1',className:"assign" ,label: 'Name',icon: <UserOutlined />},
-            {key: 'subnav1_opt2', label: 'date of Birth', icon: <CalendarOutlined />},
+            {key: 'subnav1_opt2', label: 'Date of Birth', icon: <CalendarOutlined />},
             {key: 'subnav1_opt3', label: 'Designation', icon: <ShoppingOutlined />},
             {key: 'subnav1_opt4', label: 'Team', icon: <UsergroupAddOutlined />},
             {key: 'subnav1_opt5', label: 'Email', icon:<MailOutlined />},
