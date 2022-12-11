@@ -1,0 +1,31 @@
+.ant-menu-overflow-item ant-menu-item ant-menu-item-only-child{
+    padding-left: 100px;
+}
+.navbar navbar-expand-lg{
+    padding-left: 100px;
+    margin-left: 100px;
+}
+.ant-menu-overflow-item ant-menu-item ant-menu-item-active ant-menu-item-selected ant-menu-item-only-child{
+    padding-left: 100px;
+    padding-top: 100px;
+    margin-left: 100px;
+}
+.pp{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.d-flex{
+    margin-top: 10px;
+    margin-left: 660px;
+}
+.find{
+    margin-top: 20px;
+    margin-right:40px;
+}
+.space{
+    padding-bottom: 40px;
+}
+.slick-slide{
+    margin-top: 1px;
+    padding-bottom: 12px;
+}
