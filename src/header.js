@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+//import {Routes, Route, useNavigate, Link} from 'react-router-dom';
 import './header.css';
 import { Button,Radio, Space } from 'antd';
 import { Carousel } from 'antd';
@@ -8,8 +9,13 @@ import { LaptopOutlined, CaretRightOutlined,ArrowDownOutlined,MailOutlined,Phone
 import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
 const { Header, Content, Sider } = Layout;
 
-function AppHeader() {
-}
+// function App() {
+//   const navigate = useNavigate();
+// const navigateBlogs = () => {
+//   // 👇️ navigate to /
+//   navigate('https://www.wix.com/mystunningwebsites/blog?utm_source=affiliate&utm_medium=paid_referral&utm_campaign=af_41@www.guru99.com/&experiment_id=cake_123062366^417');
+// };}
+
 const contentStyle = {
   height: '200px',
   color: '#fff',
@@ -17,13 +23,14 @@ const contentStyle = {
   textAlign: 'center',
   background: '#364d79',
   paddingTop:'50px',
+  width:'100%',
 };
-const items1 = [
+ const items1= [
     {key: 'nav1', label: 'Home'},
-    {key: 'nav2', label: 'Blogs', role:'button'},
-    {key: 'subnav1', label: 'Communities ', icon: <ArrowDownOutlined/>,
-    children: [{key:'subnav1_opt1', label:'Sports'},
-               {key:'subnav1_opt1', label:'Interests',icon:<CaretRightOutlined />}]
+    {key: 'nav2', label: 'Blogs', role: 'button'},
+    {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
+    children: [{key:'subnav1_opt1', label:'Sports',children : [{key:'subnav2_opt1',label:'Football'},{key:'subnav2_opt1',label:"Cricket"},{key:'subnav2_opt1',label:"Tennis"}]},
+               {key:'subnav2_opt1', label:'Interests',children:[{key:'subnav2_opt1',label:'Gaming'},{key:'subnav2_opt1',label:'Photography'},{key:'subnav2_opt1',label:'Painting'}]}]
     },
     {key: 'nav4', label: 'Thank it forward'},
     {key:'nav5',className:"find",label:<form className="d-flex" role="search">
@@ -101,6 +108,7 @@ const items = [
       ),
     },
   ];
+
 const AppHeader1 = () => {
   const {
     token: { colorBgContainer },
@@ -140,6 +148,7 @@ const AppHeader1 = () => {
               margin: '16px 0',
               paddingLeft:'100px',
               paddingTop:'40px',
+              width:'100%',
             }}
           >
         <div>
