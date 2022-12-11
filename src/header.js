@@ -29,8 +29,10 @@ const contentStyle = {
     {key: 'nav1', label: 'Home'},
     {key: 'nav2', label: 'Blogs', role: 'button'},
     {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
-    children: [{key:'subnav1_opt1', label:'Sports',children : [{key:'subnav2_opt1',label:'Football'},{key:'subnav2_opt1',label:"Cricket"},{key:'subnav2_opt1',label:"Tennis"}]},
-               {key:'subnav2_opt1', label:'Interests',children:[{key:'subnav2_opt1',label:'Gaming'},{key:'subnav2_opt1',label:'Photography'},{key:'subnav2_opt1',label:'Painting'}]}]
+    children: [{key:'Sports', label:'Sports',children : [{key:'football',label:'Football'},{key:'Cricket',label:"Cricket"},{key:'Tennis',label:"Tennis"}]},
+               {key:'Interests', label:'Interests',children:[{key:'Gaming',label:'Gaming'},{key:'Photography',label:'Photography'},{key:'Painting',label:'Painting'}]},
+               {key:'Barter', label:'Barter',children:[{key:'Books',label:'Books'},{key:'Furniture',label:'Furniture'},{key:'Gadgets',label:'Gadgets'}]},
+               {key:'Commute', label:'Commute',children:[{key:'Car Pool',label:'Car Pool'}]}]
     },
     {key:'nav4',label:<form className="flex" role="search">
     <button className="btn btn-primary" type="button">Thank it forward</button>
