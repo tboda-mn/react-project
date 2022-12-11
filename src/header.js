@@ -34,10 +34,11 @@ const contentStyle = {
                {key:'Barter', label:'Barter',children:[{key:'Books',label:'Books'},{key:'Furniture',label:'Furniture'},{key:'Gadgets',label:'Gadgets'}]},
                {key:'Commute', label:'Commute',children:[{key:'Car Pool',label:'Car Pool'}]}]
     },
+    {key: 'nav5', label: 'Discussion Forum', role: 'button'},
     {key:'nav4',label:<form className="flex" role="search">
     <button className="btn btn-primary" type="button">Thank it forward</button>
     </form>},
-    {key:'nav5',className:"find",label:<form className="d-flex" role="search">
+    {key:'nav6',className:"find",label:<form className="d-flex" role="search">
     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
     <button className="btn btn-outline-success" type="submit">Search</button>,
   </form>},
