@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 //import {Routes, Route, useNavigate, Link} from 'react-router-dom';
 import './header.css';
-import { Button,Radio, Space } from 'antd';
+import { Button,Radio, Space,Switch, TreeSelect } from 'antd';
 import { Carousel } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Divider} from 'antd';
@@ -120,6 +120,8 @@ const AppHeader1 = () => {
     token: { colorBgContainer },
   } = theme.useToken();
   //const [text, setText] = useState('');
+  const [treeLine, setTreeLine] = useState(true);
+  const [showLeafIcon, setShowLeafIcon] = useState(false);
   return (
     <Layout>
       <Header className="header">
@@ -144,20 +146,20 @@ const AppHeader1 = () => {
         <div>
         <Carousel autoplay>
     <div>
-      <img src='https://i.postimg.cc/Bb8txv2h/Capture.png' style={contentStyle}/>
+      <img src='https://mms.businesswire.com/media/20210615005366/en/884798/23/Logo_NoTagline_hiRes_JPG_%281%29.jpg' className='images' style={contentStyle}/>
     </div>
     <div>
-      <img src='https://i.postimg.cc/Kv8hpWV2/20221019-153818.jpg' style={contentStyle}/>
+      <img src='https://i.postimg.cc/Bb8txv2h/Capture.png' className='images' style={contentStyle}/>
     </div>
     <div>
-    <img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ambitionbox.com%2Foverview%2Fmodel-n-overview&psig=AOvVaw05WVUVOLDfyjoO-Sm9eqO1&ust=1670901340352000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKiTydiO8_sCFQAAAAAdAAAAABAE' style={contentStyle}/>
+    <img src='https://img.freepik.com/free-vector/merry-christmas-festival-christmas-balls-red-color-banner-vector_1055-11339.jpg?w=1380&t=st=1670862707~exp=1670863307~hmac=7b1748bec682334294f0374c1f0558ca8251eef2d812c11b1b138c45ecdf0494' className='images' style={contentStyle}/>
     </div>
     <div>
-      <h3 style={contentStyle}>4</h3>
+      <img src='https://www.shutterstock.com/image-vector/happy-new-year-banner-winter-600w-1568594656.jpg' className='images' style={contentStyle}/>
     </div>
   </Carousel></div>
         <h3>What's on your mind?</h3>
-        <Dropdown
+        {/* <Dropdown
 menu={{
   items,
 }}
@@ -185,8 +187,16 @@ dropdownRender={(menu) => (
     <DownOutlined />
   </Space>
 </a>
-</Dropdown>
+</Dropdown> */}
 
+<Space direction="vertical">
+      <Switch
+        checkedChildren="Question"
+        unCheckedChildren="Thought"
+        //checked={treeLine}
+        //onChange={() => setTreeLine(!treeLine)}
+      />
+    </Space>
           </Content>
           
           <Content>
