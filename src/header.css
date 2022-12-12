@@ -16,8 +16,10 @@
 }
 .d-flex{
     margin-top: 10px;
-    margin-left: 620px;
+    margin-left: 0px;
     height: 60%;
+    margin-right: 600px;
+    
 }
 .find{
     margin-top: 20px;

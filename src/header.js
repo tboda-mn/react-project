@@ -27,6 +27,10 @@ const contentStyle = {
   //paddingLeft:'70px',
 };
  const items1= [
+  {key:'nav6',className:"find",label:<form className="d-flex" role="search">
+  <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+  <button className="btn btn-outline-success" type="submit">Search</button>,
+</form>},
     {key: 'nav1', label: 'Home'},
     {key: 'nav2', label: 'Blogs', role: 'button'},
     {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
@@ -38,11 +42,7 @@ const contentStyle = {
     //{key: 'nav5', label: 'Discussion Forum', role: 'button'},
     {key:'nav4',label:<form className="flex" role="search">
     <button className="btn btn-primary" type="button">Thank it forward</button>
-    </form>},
-    {key:'nav6',className:"find",label:<form className="d-flex" role="search">
-    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-    <button className="btn btn-outline-success" type="submit">Search</button>,
-  </form>},
+    </form>}
    // {key: 'nav4', label: 'Thank it forward'},
 ];
 
@@ -127,23 +127,6 @@ const AppHeader1 = () => {
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={items1} />
       </Header>
       <Layout>
-        <Sider
-          width={200}
-          style={{
-            background: colorBgContainer,
-          }}
-        >
-          <Menu
-            mode="inline"
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
-            style={{
-              height: '100%',
-              borderRight: 0,
-            }}
-            items={items2}
-          />
-        </Sider>
         <Layout
           style={{
             padding: '0 24px 24px',
@@ -157,6 +140,7 @@ const AppHeader1 = () => {
               width:'100%',
             }}
           >
+            
         <div>
         <Carousel autoplay>
     <div>
@@ -204,6 +188,7 @@ dropdownRender={(menu) => (
 </Dropdown>
 
           </Content>
+          
           <Content>
            <textarea className="form-control" id="myBox" rows="8"></textarea>
             <div>
@@ -215,6 +200,23 @@ dropdownRender={(menu) => (
             </div>
           </Content>
         </Layout>
+        <Sider
+          width={200}
+          style={{
+            background: colorBgContainer,
+          }}
+        >
+          <Menu
+            mode="inline"
+            defaultSelectedKeys={['1']}
+            defaultOpenKeys={['sub1']}
+            style={{
+              height: '100%',
+              borderRight: 0,
+            }}
+            items={items2}
+          />
+        </Sider>
       </Layout>
     </Layout>
   );
