@@ -23,18 +23,19 @@ const contentStyle = {
   textAlign: 'center',
   background: '#364d79',
   paddingTop:'50px',
-  //width:'100%',
+  width:'70%',
+  //paddingLeft:'70px',
 };
  const items1= [
     {key: 'nav1', label: 'Home'},
     {key: 'nav2', label: 'Blogs', role: 'button'},
     {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
-    children: [{key:'Sports', label:'Sports',children : [{key:'football',label:'Football'},{key:'Cricket',label:"Cricket"},{key:'Tennis',label:"Tennis"}]},
+    children: [{key:'Hobbies', label:'Hobbies',children : [{key:'Reading',label:'Reading', children:[{key:'club 1',label:'Reading club 1'},{key:'club 2',label:'Reading club 2'}]},{key:'Sports',label:"Sports", children: [{key:'Cricket',label:'Cricket'},{key:'Football',label:'Football'}]}]},
                {key:'Interests', label:'Interests',children:[{key:'Gaming',label:'Gaming'},{key:'Photography',label:'Photography'},{key:'Painting',label:'Painting'}]},
                {key:'Barter', label:'Barter',children:[{key:'Books',label:'Books'},{key:'Furniture',label:'Furniture'},{key:'Gadgets',label:'Gadgets'}]},
                {key:'Commute', label:'Commute',children:[{key:'Car Pool',label:'Car Pool'}]}]
     },
-    {key: 'nav5', label: 'Discussion Forum', role: 'button'},
+    //{key: 'nav5', label: 'Discussion Forum', role: 'button'},
     {key:'nav4',label:<form className="flex" role="search">
     <button className="btn btn-primary" type="button">Thank it forward</button>
     </form>},
@@ -165,7 +166,7 @@ const AppHeader1 = () => {
       <img src='https://i.postimg.cc/Kv8hpWV2/20221019-153818.jpg' style={contentStyle}/>
     </div>
     <div>
-      <h3 style={contentStyle}>3</h3>
+    <img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ambitionbox.com%2Foverview%2Fmodel-n-overview&psig=AOvVaw05WVUVOLDfyjoO-Sm9eqO1&ust=1670901340352000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKiTydiO8_sCFQAAAAAdAAAAABAE' style={contentStyle}/>
     </div>
     <div>
       <h3 style={contentStyle}>4</h3>
