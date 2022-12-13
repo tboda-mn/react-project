@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 //import {Routes, Route, useNavigate, Link} from 'react-router-dom';
 import './header.css';
-import { Button,Radio, Space,Switch, TreeSelect } from 'antd';
+import { Button,Radio, Space,Switch,TreeSelect } from 'antd';
 import { Carousel } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+import { DownOutlined,SmileOutlined } from '@ant-design/icons';
 import { Dropdown, Divider} from 'antd';
 import { LaptopOutlined, CaretRightOutlined,ArrowDownOutlined,MailOutlined,PhoneOutlined,CalendarOutlined,ShoppingOutlined,UsergroupAddOutlined,MailTwoTone,PhoneTwoTone, CalendarTwoTone,SettingTwoTone,MessageTwoTone,NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
@@ -17,11 +17,11 @@ const { Header, Content, Sider } = Layout;
 // };}
 
 const contentStyle = {
-  height: '200px',
+  height: '300px',
   color: '#fff',
-  lineHeight: '160px',
+  lineHeight: '150px',
   textAlign: 'center',
-  background: '#364d79',
+  background: '#F5F4F4',
   paddingTop:'50px',
   width:'70%',
   //paddingLeft:'70px',
@@ -29,7 +29,7 @@ const contentStyle = {
  const items1= [
   {key:'nav6',className:"find",label:<form className="d-flex" role="search">
   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-  <button className="btn btn-outline-success" type="submit">Search</button>,
+  <button className="btn btn-outline-success" type="submit">Search</button>
 </form>},
     {key: 'nav1', label: 'Home'},
     {key: 'nav2', label: 'Blogs', role: 'button'},
@@ -40,8 +40,8 @@ const contentStyle = {
                {key:'Commute', label:'Commute',children:[{key:'Car Pool',label:'Car Pool'}]}]
     },
     //{key: 'nav5', label: 'Discussion Forum', role: 'button'},
-    {key:'nav4',label:<form className="flex" role="search">
-    <button className="btn btn-primary" type="button">Thank it forward</button>
+    {key:'nav4',label:<form className="flex" role="search"> 
+    <button className="btn btn-primary" type="button" property='<SmileOutlined />'>Thank it forward</button>
     </form>}
    // {key: 'nav4', label: 'Thank it forward'},
 ];
@@ -155,7 +155,7 @@ const AppHeader1 = () => {
     <img src='https://img.freepik.com/free-vector/merry-christmas-festival-christmas-balls-red-color-banner-vector_1055-11339.jpg?w=1380&t=st=1670862707~exp=1670863307~hmac=7b1748bec682334294f0374c1f0558ca8251eef2d812c11b1b138c45ecdf0494' className='images' style={contentStyle}/>
     </div>
     <div>
-      <img src='https://www.shutterstock.com/image-vector/happy-new-year-banner-winter-600w-1568594656.jpg' className='images' style={contentStyle}/>
+      <img src='https://i.postimg.cc/nV7BcFgG/new.jpg' className='images' style={contentStyle}/>
     </div>
   </Carousel></div>
         <h3>What's on your mind?</h3>

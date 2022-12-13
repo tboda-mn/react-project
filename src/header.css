@@ -16,13 +16,15 @@
 }
 .d-flex{
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 2px;
     height: 60%;
     margin-right: 600px;
     
 }
+
 .images{
     margin-left: 200px;
+    height:400%;
 }
 .find{
     margin-top: 20px;
@@ -34,4 +36,5 @@
 .slick-slide{
     margin-top: 1px;
     padding-bottom: 12px;
+    height: 1500%;
 }
