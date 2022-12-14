@@ -22,7 +22,7 @@ const contentStyle = {
   lineHeight: '150px',
   textAlign: 'center',
   background: '#F5F4F4',
-  paddingTop:'50px',
+  paddingTop:'30px',
   width:'70%',
   //paddingLeft:'70px',
 };
@@ -67,12 +67,12 @@ const items2 = [
     {
         key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
         children: [
-            {key: 'subnav1_opt1',className:"assign" ,label: 'Name',icon: <UserOutlined />},
-            {key: 'subnav1_opt2', label: 'Date of Birth', icon: <CalendarOutlined />},
-            {key: 'subnav1_opt3', label: 'Designation', icon: <ShoppingOutlined />},
-            {key: 'subnav1_opt4', label: 'Team', icon: <UsergroupAddOutlined />},
-            {key: 'subnav1_opt5', label: 'Email', icon:<MailOutlined />},
-            {key: 'subnav1_opt6', label: 'Mobile Number', icon:<PhoneOutlined />},
+            {key: 'subnav1_opt1',className:"assign" ,label: 'Eesha Jahnavi',icon: <UserOutlined />},
+            {key: 'subnav1_opt2', label: '25/04/2001', icon: <CalendarOutlined />},
+            {key: 'subnav1_opt3', label: 'AMTS', icon: <ShoppingOutlined />},
+            {key: 'subnav1_opt4', label: 'High Tech', icon: <UsergroupAddOutlined />},
+            {key: 'subnav1_opt5', label: 'ejahnavi@gmail.com', icon:<MailOutlined />},
+            {key: 'subnav1_opt6', label: '9999999999', icon:<PhoneOutlined />},
         ]
     },
     {key: 'subnav2', label: 'Messaging', icon: <MessageTwoTone />},
@@ -140,6 +140,7 @@ const AppHeader1 = () => {
               paddingLeft:'100px',
               paddingTop:'40px',
               width:'100%',
+              //backgroundColor:'black',
             }}
           >
             
