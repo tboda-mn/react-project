@@ -40,9 +40,8 @@ const contentStyle = {
                {key:'Commute', label:'Commute',children:[{key:'Car Pool',label:'Car Pool'}]}]
     },
     //{key: 'nav5', label: 'Discussion Forum', role: 'button'},
-    {key:'nav4',label:<form className="flex" role="search"> 
-    <button className="btn btn-primary" type="button" property='<SmileOutlined />'>Thank it forward</button>
-    </form>}
+    {key:'nav4',label:"Knowledge Management"},
+    {key:'nav4',label:"THANK IT FORWARD"},
    // {key: 'nav4', label: 'Thank it forward'},
 ];
 
@@ -67,12 +66,12 @@ const items2 = [
     {
         key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
         children: [
-            {key: 'subnav1_opt1',className:"assign" ,label: 'Eesha Jahnavi',icon: <UserOutlined />},
-            {key: 'subnav1_opt2', label: '25/04/2001', icon: <CalendarOutlined />},
-            {key: 'subnav1_opt3', label: 'AMTS', icon: <ShoppingOutlined />},
-            {key: 'subnav1_opt4', label: 'High Tech', icon: <UsergroupAddOutlined />},
-            {key: 'subnav1_opt5', label: 'ejahnavi@gmail.com', icon:<MailOutlined />},
-            {key: 'subnav1_opt6', label: '9999999999', icon:<PhoneOutlined />},
+            {key: 'subnav1_opt1',label: 'Name',icon: <UserOutlined />},
+            {key: 'subnav1_opt2', label: 'Date of Birth', icon: <CalendarOutlined />},
+            {key: 'subnav1_opt3', label: 'Designation', icon: <ShoppingOutlined />},
+            {key: 'subnav1_opt4', label: 'Team', icon: <UsergroupAddOutlined />},
+            {key: 'subnav1_opt5', label: 'Email ID', icon:<MailOutlined />},
+            {key: 'subnav1_opt6', label: 'Mobile Number', icon:<PhoneOutlined />},
         ]
     },
     {key: 'subnav2', label: 'Messaging', icon: <MessageTwoTone />},

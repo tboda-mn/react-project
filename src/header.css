@@ -18,7 +18,7 @@
     margin-top: 10px;
     margin-left: 2px;
     height: 60%;
-    margin-right: 600px;
+    margin-right: 400px;
     
 }
 
@@ -37,4 +37,7 @@
     margin-top: 1px;
     padding-bottom: 12px;
     height: 1500%;
+}
+.assign{
+    padding-bottom: 6px;
 }
