@@ -8,6 +8,15 @@ import { Dropdown, Divider} from 'antd';
 import { LaptopOutlined, CaretRightOutlined,ArrowDownOutlined,MailOutlined,PhoneOutlined,CalendarOutlined,ShoppingOutlined,UsergroupAddOutlined,MailTwoTone,PhoneTwoTone, CalendarTwoTone,SettingTwoTone,MessageTwoTone,NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
 //import background from "./downloads/flash.jpg";
+function App(){
+function useRoot(){
+  const navigate = useNavigate();
+  return(
+    <div>
+      <button onClick={() => navigate("https://blog.hubspot.com/blog/tabid/6307/bid/34143/12-inspiring-examples-of-beautiful-blog-homepage-designs.aspx")}>Blogs</button>
+    </div>
+  )
+}
 const { Header, Content, Sider } = Layout;
 
 // function App() {
@@ -16,8 +25,7 @@ const { Header, Content, Sider } = Layout;
 //   // 👇️ navigate to /
 //   navigate('https://www.wix.com/mystunningwebsites/blog?utm_source=affiliate&utm_medium=paid_referral&utm_campaign=af_41@www.guru99.com/&experiment_id=cake_123062366^417');
 // };}
-function App(){
-  const navigate = useNavigate();
+
 const contentStyle = {
   height: '300px',
   color: '#fff',
@@ -40,7 +48,7 @@ const contentStyle = {
   <button className="btn btn-outline-success" type="submit">Search</button>
 </form>},
     {key: 'nav1', label: 'Home'},
-    {key: 'nav2', label: <button onClick={() => {navigate("/");}}> Blogs</button>},
+    {key: 'nav2',label: <button className="btn btn-outline-success" type="submit" onClick={useRoot}>Blogs</button>},
     {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
     children: [{key:'Hobbies', label:'Hobbies',children : [{key:'Reading',label:'Reading', children:[{key:'club 1',label:'Reading club 1'},{key:'club 2',label:'Reading club 2'}]},{key:'Sports',label:"Sports", children: [{key:'Cricket',label:'Cricket'},{key:'Football',label:'Football'}]}]},
                {key:'Interests', label:'Interests',children:[{key:'Gaming',label:'Gaming'},{key:'Photography',label:'Photography'},{key:'Painting',label:'Painting'}]},
@@ -240,5 +248,5 @@ dropdownRender={(menu) => (
   );
 };
 }
-
 export default App;
+//export default AppHeader1;
