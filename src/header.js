@@ -7,6 +7,7 @@ import { DownOutlined,SmileOutlined } from '@ant-design/icons';
 import { Dropdown, Divider} from 'antd';
 import { LaptopOutlined, CaretRightOutlined,ArrowDownOutlined,MailOutlined,PhoneOutlined,CalendarOutlined,ShoppingOutlined,UsergroupAddOutlined,MailTwoTone,PhoneTwoTone, CalendarTwoTone,SettingTwoTone,MessageTwoTone,NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
+//import background from "./downloads/flash.jpg";
 const { Header, Content, Sider } = Layout;
 
 // function App() {
@@ -26,6 +27,9 @@ const contentStyle = {
   width:'70%',
   //paddingLeft:'70px',
 };
+<div style={{ backgroundImage: `url(https://images5.alphacoders.com/840/840870.jpg)` }}>
+      Hello World
+    </div>
  const items1= [
   {key:'nav6',className:"find",label:<form className="d-flex" role="search">
   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -41,7 +45,7 @@ const contentStyle = {
     },
     //{key: 'nav5', label: 'Discussion Forum', role: 'button'},
     {key:'nav4',label:"Knowledge Management"},
-    {key:'nav4',label:"THANK IT FORWARD"},
+    {key:'nav5',label:"THANK IT FORWARD"},
    // {key: 'nav4', label: 'Thank it forward'},
 ];
 
@@ -66,12 +70,12 @@ const items2 = [
     {
         key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
         children: [
-            {key: 'subnav1_opt1',label: 'Name',icon: <UserOutlined />},
-            {key: 'subnav1_opt2', label: 'Date of Birth', icon: <CalendarOutlined />},
-            {key: 'subnav1_opt3', label: 'Designation', icon: <ShoppingOutlined />},
-            {key: 'subnav1_opt4', label: 'Team', icon: <UsergroupAddOutlined />},
-            {key: 'subnav1_opt5', label: 'Email ID', icon:<MailOutlined />},
-            {key: 'subnav1_opt6', label: 'Mobile Number', icon:<PhoneOutlined />},
+            {key: 'subnav1_opt1',label: 'Eesha Jahnavi',icon: <UserOutlined />},
+            {key: 'subnav1_opt2', label: '1/2/2001', icon: <CalendarOutlined />},
+            {key: 'subnav1_opt3', label: 'AMTS', icon: <ShoppingOutlined />},
+            {key: 'subnav1_opt4', label: 'High Tech', icon: <UsergroupAddOutlined />},
+            {key: 'subnav1_opt5', label: 'ejahnavi@gmail.com', icon:<MailOutlined />},
+            {key: 'subnav1_opt6', label: '9999999999', icon:<PhoneOutlined />},
         ]
     },
     {key: 'subnav2', label: 'Messaging', icon: <MessageTwoTone />},
@@ -202,11 +206,11 @@ dropdownRender={(menu) => (
           <Content>
            <textarea className="form-control" id="myBox" rows="8"></textarea>
             <div>
-            <Button type="primary" ghost className='pp'>Like</Button>
-            <Button type="primary" ghost className='pp'>Comment</Button>
-            <Button type="primary" ghost className='pp'>Share</Button>
-            <Button type="primary" ghost className='pp'>Post</Button>
-            <Button type="primary" ghost className='pp'>Repost</Button>
+            <button className="btn btn-outline-success" type="submit">Like</button>
+            <button className="btn btn-outline-success" type="submit">Comment</button>
+            <button className="btn btn-outline-success" type="submit">Share</button>
+            <button className="btn btn-outline-success" type="submit">Post</button>
+            <button className="btn btn-outline-success" type="submit">Repost</button>
             </div>
           </Content>
         </Layout>

@@ -41,3 +41,14 @@
 .assign{
     padding-bottom: 6px;
 }
+.ant-layout-content{
+    background-image: 'https://t4.ftcdn.net/jpg/04/11/36/09/360_F_411360907_DSTo6QdMQwerRhtmUjyg0FOGj4g4kveo.jpg';
+}
+.btn-outline-success{
+    margin-top:5px;
+    margin-right: 20px;
+}
+.ant-layout css-dev-only-do-not-override-1i536d8{
+    background-image: 'https://t4.ftcdn.net/jpg/04/11/36/09/360_F_411360907_DSTo6QdMQwerRhtmUjyg0FOGj4g4kveo.jpg';
+    color:black; 
+}
