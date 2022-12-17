@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-//import {Routes, Route, useNavigate, Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import './header.css';
 import { Button,Radio, Space,Switch,TreeSelect } from 'antd';
 import { Carousel } from 'antd';
@@ -16,7 +16,8 @@ const { Header, Content, Sider } = Layout;
 //   // 👇️ navigate to /
 //   navigate('https://www.wix.com/mystunningwebsites/blog?utm_source=affiliate&utm_medium=paid_referral&utm_campaign=af_41@www.guru99.com/&experiment_id=cake_123062366^417');
 // };}
-
+function App(){
+  const navigate = useNavigate();
 const contentStyle = {
   height: '300px',
   color: '#fff',
@@ -30,13 +31,16 @@ const contentStyle = {
 <div style={{ backgroundImage: `url(https://images5.alphacoders.com/840/840870.jpg)` }}>
       Hello World
     </div>
+
+
+
  const items1= [
   {key:'nav6',className:"find",label:<form className="d-flex" role="search">
   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
   <button className="btn btn-outline-success" type="submit">Search</button>
 </form>},
     {key: 'nav1', label: 'Home'},
-    {key: 'nav2', label: 'Blogs', role: 'button'},
+    {key: 'nav2', label: <button onClick={() => {navigate("/");}}> Blogs</button>},
     {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
     children: [{key:'Hobbies', label:'Hobbies',children : [{key:'Reading',label:'Reading', children:[{key:'club 1',label:'Reading club 1'},{key:'club 2',label:'Reading club 2'}]},{key:'Sports',label:"Sports", children: [{key:'Cricket',label:'Cricket'},{key:'Football',label:'Football'}]}]},
                {key:'Interests', label:'Interests',children:[{key:'Gaming',label:'Gaming'},{key:'Photography',label:'Photography'},{key:'Painting',label:'Painting'}]},
@@ -235,5 +239,6 @@ dropdownRender={(menu) => (
     </Layout>
   );
 };
+}
 
-export default AppHeader1;
+export default App;
