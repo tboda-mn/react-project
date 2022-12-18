@@ -31,6 +31,7 @@ const contentStyle = {
       Hello World
     </div>
  const items1= [
+  {key:'nav7',className:'logo',label:<img src='https://i.postimg.cc/GhX2V4Wj/logo-removebg-preview-1.png '/>},
   {key:'nav6',className:"find",label:<form className="d-flex" role="search">
   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
   <button className="btn btn-outline-success" type="submit">Search</button>

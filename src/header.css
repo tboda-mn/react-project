@@ -18,7 +18,7 @@
     margin-top: 10px;
     margin-left: 2px;
     height: 60%;
-    margin-right: 300px;
+    margin-right: 200px;
     
 }
 
@@ -65,4 +65,7 @@
     margin-right: 15px;
     background-color: #d4ebff;
     border: #d4ffe4;
+}
+.logo{
+    object-fit: normal;
 }
