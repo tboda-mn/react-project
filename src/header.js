@@ -36,8 +36,8 @@ const contentStyle = {
   <button className="btn btn-outline-success" type="submit">Search</button>
 </form>},
     {key: 'nav1', label: 'Home'},
-{key:'nav2',label:<a href="https://google.com" target="_blank" rel="noreferrer">
-          <button className="btn btn-outline-success" type="submit">Blogs</button>
+{key:'nav2',label:<a href="https://www.blogger.com/about/?bpli=1" target="_blank" rel="noreferrer">
+          <Button type="link" className="KM">Blogs</Button>
         </a>},
             {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
     children: [{key:'Hobbies', label:'Hobbies',children : [{key:'Reading',label:'Reading', children:[{key:'club 1',label:'Reading club 1'},{key:'club 2',label:'Reading club 2'}]},{key:'Sports',label:"Sports", children: [{key:'Cricket',label:'Cricket'},{key:'Football',label:'Football'}]}]},
@@ -46,7 +46,9 @@ const contentStyle = {
                {key:'Commute', label:'Commute',children:[{key:'Car Pool',label:'Car Pool'}]}]
     },
     //{key: 'nav5', label: 'Discussion Forum', role: 'button'},
-    {key:'nav4',label:"Knowledge Management"},
+    {key:'nav4',label:<a href="https://freshdesk.com/knowledge-management-system" target="_blank" rel="noreferrer">
+          <Button type="link" className="KM">Knowledge Management</Button>
+        </a>},
     {key:'nav5',label:"THANK IT FORWARD"},
    // {key: 'nav4', label: 'Thank it forward'},
 ];
