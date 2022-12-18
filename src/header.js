@@ -40,7 +40,7 @@ const contentStyle = {
           <Button type="link" className="KM">Blogs</Button>
         </a>},
             {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
-    children: [{key:'Hobbies', label:'Hobbies',children : [{key:'Reading',label:'Reading', children:[{key:'club 1',label:'Reading club 1'},{key:'club 2',label:'Reading club 2'}]},{key:'Sports',label:"Sports", children: [{key:'Cricket',label:'Cricket'},{key:'Football',label:'Football'}]}]},
+    children: [{key:'Hobbies', label:'Hobbies',children : [{key:'Reading',label:'Reading', children:[{key:'club 1',label:'Reading club 1',},{key:'club 2',label:'Reading club 2'}]},{key:'Sports',label:"Sports", children: [{key:'Cricket',label:'Cricket'},{key:'Football',label:'Football'}]}]},
                {key:'Interests', label:'Interests',children:[{key:'Gaming',label:'Gaming'},{key:'Photography',label:'Photography'},{key:'Painting',label:'Painting'}]},
                {key:'Barter', label:'Barter',children:[{key:'Books',label:'Books'},{key:'Furniture',label:'Furniture'},{key:'Gadgets',label:'Gadgets'}]},
                {key:'Commute', label:'Commute',children:[{key:'Car Pool',label:'Car Pool'}]}]
@@ -210,11 +210,11 @@ dropdownRender={(menu) => (
           <Content>
            <textarea className="form-control" id="myBox" rows="8"></textarea>
             <div>
-            <button className="btn btn-outline-success" type="submit">Like</button>
-            <button className="btn btn-outline-success" type="submit">Comment</button>
-            <button className="btn btn-outline-success" type="submit">Share</button>
-            <button className="btn btn-outline-success" type="submit">Post</button>
-            <button className="btn btn-outline-success" type="submit">Repost</button>
+            <Button className="button">Like</Button>
+            <Button className="button">Comment</Button>
+            <Button className="button">Share</Button>
+            <Button className="button">Post</Button>
+            <Button className="button">Repost</Button>
             </div>
           </Content>
         </Layout>

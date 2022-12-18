@@ -46,7 +46,7 @@
 }
 .btn-outline-success{
     margin-top:0px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .ant-layout css-dev-only-do-not-override-1i536d8{
     background-image: 'https://t4.ftcdn.net/jpg/04/11/36/09/360_F_411360907_DSTo6QdMQwerRhtmUjyg0FOGj4g4kveo.jpg';
@@ -54,4 +54,15 @@
 }
 .KM{
     color:white;
+    padding-left: 0px;
+    padding-right:0px;
+}
+.ant-menu-overflow-item{
+    padding-left:0px;
+}
+.button{
+    margin-top: 10px;
+    margin-right: 15px;
+    background-color: #d4ebff;
+    border: #d4ffe4;
 }
