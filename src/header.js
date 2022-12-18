@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {useNavigate} from 'react-router-dom';
+//import {Routes, Route, useNavigate, Link} from 'react-router-dom';
 import './header.css';
 import { Button,Radio, Space,Switch,TreeSelect } from 'antd';
 import { Carousel } from 'antd';
@@ -8,15 +8,6 @@ import { Dropdown, Divider} from 'antd';
 import { LaptopOutlined, CaretRightOutlined,ArrowDownOutlined,MailOutlined,PhoneOutlined,CalendarOutlined,ShoppingOutlined,UsergroupAddOutlined,MailTwoTone,PhoneTwoTone, CalendarTwoTone,SettingTwoTone,MessageTwoTone,NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
 //import background from "./downloads/flash.jpg";
-function App(){
-function useRoot(){
-  const navigate = useNavigate();
-  return(
-    <div>
-      <button onClick={() => navigate("https://blog.hubspot.com/blog/tabid/6307/bid/34143/12-inspiring-examples-of-beautiful-blog-homepage-designs.aspx")}>Blogs</button>
-    </div>
-  )
-}
 const { Header, Content, Sider } = Layout;
 
 // function App() {
@@ -39,17 +30,16 @@ const contentStyle = {
 <div style={{ backgroundImage: `url(https://images5.alphacoders.com/840/840870.jpg)` }}>
       Hello World
     </div>
-
-
-
  const items1= [
   {key:'nav6',className:"find",label:<form className="d-flex" role="search">
   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
   <button className="btn btn-outline-success" type="submit">Search</button>
 </form>},
     {key: 'nav1', label: 'Home'},
-    {key: 'nav2',label: <button className="btn btn-outline-success" type="submit" onClick={useRoot}>Blogs</button>},
-    {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
+{key:'nav2',label:<a href="https://google.com" target="_blank" rel="noreferrer">
+          <button className="btn btn-outline-success" type="submit">Blogs</button>
+        </a>},
+            {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,
     children: [{key:'Hobbies', label:'Hobbies',children : [{key:'Reading',label:'Reading', children:[{key:'club 1',label:'Reading club 1'},{key:'club 2',label:'Reading club 2'}]},{key:'Sports',label:"Sports", children: [{key:'Cricket',label:'Cricket'},{key:'Football',label:'Football'}]}]},
                {key:'Interests', label:'Interests',children:[{key:'Gaming',label:'Gaming'},{key:'Photography',label:'Photography'},{key:'Painting',label:'Painting'}]},
                {key:'Barter', label:'Barter',children:[{key:'Books',label:'Books'},{key:'Furniture',label:'Furniture'},{key:'Gadgets',label:'Gadgets'}]},
@@ -247,6 +237,5 @@ dropdownRender={(menu) => (
     </Layout>
   );
 };
-}
-export default App;
-//export default AppHeader1;
+
+export default AppHeader1;
