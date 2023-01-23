@@ -37,7 +37,7 @@ const contentStyle = {
   <button className="btn btn-outline-success" type="submit">Search</button>
 </form>},
     {key: 'nav1', label: 'Home'},
-{key:'nav2',label:<a href="https://www.blogger.com/about/?bpli=1" target="_blank" rel="noreferrer">
+{key:'nav2',label:<a href="http://localhost:3000/" target="_blank" rel="noreferrer">
           <Button type="link" className="KM">Blogs</Button>
         </a>},
             {key: 'subnav1', label: 'Communities ', icon : <ArrowDownOutlined/>,

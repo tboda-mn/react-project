@@ -4,9 +4,7 @@ import {Navigate} from 'react-router-dom'
 function Blogs(){
     return(
         <div>
-            <Navigate to="https://www.wix.com/"/>
-            About
-            <button> Go to the home page</button>
+            <h1>Welcome to Blogs</h1>
         </div>
     );
 }
