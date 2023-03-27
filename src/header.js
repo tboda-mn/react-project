@@ -16,6 +16,7 @@ const { Header, Content, Sider } = Layout;
 //   navigate('https://www.wix.com/mystunningwebsites/blog?utm_source=affiliate&utm_medium=paid_referral&utm_campaign=af_41@www.guru99.com/&experiment_id=cake_123062366^417');
 // };}
 
+
 const contentStyle = {
   height: '300px',
   color: '#fff',
@@ -26,6 +27,10 @@ const contentStyle = {
   width:'70%',
   //paddingLeft:'70px',
 };
+
+ AlipaySquareFilled(){
+  console.log(asdf);
+}
  const items1= [
   {key:'nav6',className:"find",label:<form className="d-flex" role="search">
   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
