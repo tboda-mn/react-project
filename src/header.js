@@ -41,7 +41,7 @@ const contentStyle = {
     </form>},
     {key:'nav6',className:"find",label:<form className="d-flex" role="search">
     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-    <button className="btn btn-outline-success" type="submit">Search</button>,
+    <button className="btn btn-outline-success" type="submit">Search</button>
   </form>},
    // {key: 'nav4', label: 'Thank it forward'},
 ];
@@ -67,12 +67,12 @@ const items2 = [
     {
         key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
         children: [
-            {key: 'subnav1_opt1',className:"assign" ,label: 'Name',icon: <UserOutlined />},
-            {key: 'subnav1_opt2', label: 'Date of Birth', icon: <CalendarOutlined />},
-            {key: 'subnav1_opt3', label: 'Designation', icon: <ShoppingOutlined />},
-            {key: 'subnav1_opt4', label: 'Team', icon: <UsergroupAddOutlined />},
-            {key: 'subnav1_opt5', label: 'Email', icon:<MailOutlined />},
-            {key: 'subnav1_opt6', label: 'Mobile Number', icon:<PhoneOutlined />},
+            {key: 'subnav1_opt1',className:"assign" ,label: 'Thanuj Sai',icon: <UserOutlined />},
+            {key: 'subnav1_opt2', label: '14/03/2001', icon: <CalendarOutlined />},
+            {key: 'subnav1_opt3', label: 'AMTS', icon: <ShoppingOutlined />},
+            {key: 'subnav1_opt4', label: 'CDM', icon: <UsergroupAddOutlined />},
+            {key: 'subnav1_opt5', label: 'thanujsai@gmail.com', icon:<MailOutlined />},
+            {key: 'subnav1_opt6', label: '9999999999', icon:<PhoneOutlined />},
         ]
     },
     {key: 'subnav2', label: 'Messaging', icon: <MessageTwoTone />},
@@ -157,22 +157,22 @@ const AppHeader1 = () => {
               width:'100%',
             }}
           >
-        <div>
-        <Carousel autoplay>
+        <div className="slider-container">
+        <Carousel className="carousel-style" autoplay>
     <div>
-      <img src='https://i.postimg.cc/Bb8txv2h/Capture.png' style={contentStyle}/>
+      <img src='https://i.postimg.cc/FHt0YdYK/iron-man-ouqxo5w2b59h0042.jpg' style={contentStyle} className='photos'/>  
     </div>
     <div>
-      <img src='https://i.postimg.cc/Kv8hpWV2/20221019-153818.jpg' style={contentStyle}/>
+      <img src='https://i.postimg.cc/FHt0YdYK/iron-man-ouqxo5w2b59h0042.jpg' style={contentStyle} className='photos'/>
     </div>
     <div>
-    <img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ambitionbox.com%2Foverview%2Fmodel-n-overview&psig=AOvVaw05WVUVOLDfyjoO-Sm9eqO1&ust=1670901340352000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKiTydiO8_sCFQAAAAAdAAAAABAE' style={contentStyle}/>
+    <img src='https://i.postimg.cc/k4hbqBrq/logan.jpg' style={contentStyle} className='photos'/>
     </div>
     <div>
-      <h3 style={contentStyle}>4</h3>
+    <img src='https://i.postimg.cc/y8X3Wfqf/wallpaperflare-com-wallpaper.jpg' style={contentStyle} className='photos'/>
     </div>
   </Carousel></div>
-        <h3>What's on your mind?</h3>
+        <h3>What's on your mind?</h3> 
         <Dropdown
 menu={{
   items,
