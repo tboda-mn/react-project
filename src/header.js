@@ -7,19 +7,6 @@ import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Divider} from 'antd';
 import { LaptopOutlined, CaretRightOutlined,ArrowDownOutlined,MailOutlined,PhoneOutlined,CalendarOutlined,ShoppingOutlined,UsergroupAddOutlined,MailTwoTone,PhoneTwoTone, CalendarTwoTone,SettingTwoTone,MessageTwoTone,NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
-import { About } from './components/About';
-import { Information } from './components/Information';
-import { Home } from './components/Home';
-import { Navbar } from './components/Navbar.js';
-import { Items1 } from './components/Items1';
 
 const { Header, Content, Sider } = Layout;
 
@@ -113,12 +100,6 @@ const AppHeader1 = () => {
   //const [text, setText] = useState('');
   return (
     <>
-    <Navbar></Navbar>
-      <Routes>
-        <Route exact path='/' element={<Home />}></Route> 
-        <Route exact path='/about' element={<About />}></Route>
-        <Route exact path='/information' element={<Information />}></Route>
-      </Routes>
     <Layout>
       <Header className="header">
         <div className="logo" />
@@ -169,7 +150,7 @@ const AppHeader1 = () => {
                   <img src='https://i.postimg.cc/y8X3Wfqf/wallpaperflare-com-wallpaper.jpg' style={contentStyle} className='photos' />
                 </div>
               </Carousel></div>
-            <h3>What's on your mind?</h3>
+            <h3 className='text'>What's on your mind?</h3>
             <Dropdown
               menu={{
                 items,
