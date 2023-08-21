@@ -1,0 +1,16 @@
+const Items2 = () => ([
+    {
+        key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
+        children: [
+            {key: 'subnav1_opt1',className:"assign" ,label: 'Thanuj Sai',icon: <UserOutlined />},
+            {key: 'subnav1_opt2', label: '14/03/2001', icon: <CalendarOutlined />},
+            {key: 'subnav1_opt3', label: 'AMTS', icon: <ShoppingOutlined />},
+            {key: 'subnav1_opt4', label: 'CDM', icon: <UsergroupAddOutlined />},
+            {key: 'subnav1_opt5', label: 'thanujsai@gmail.com', icon:<MailOutlined />},
+            {key: 'subnav1_opt6', label: '9999999999', icon:<PhoneOutlined />},
+        ]
+    },
+    {key: 'subnav2', label: 'Messaging', icon: <MessageTwoTone />},
+    {key: 'subnav3', label: 'Settings', icon: <SettingTwoTone />},
+]);
+export default Items2;

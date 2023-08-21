@@ -15,18 +15,13 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
+import { About } from './components/About';
+import { Information } from './components/Information';
+import { Home } from './components/Home';
+import { Navbar } from './components/Navbar.js';
+import { Items1 } from './components/Items1';
 
 const { Header, Content, Sider } = Layout;
-const router = createBrowserRouter([
-  {
-    path:"/",
-    element:<Home/>
-  },
-  {
-    path:"/About",
-    element:<About/>
-  }
- ])
 
 const contentStyle = {
   height: '400px',
@@ -58,7 +53,7 @@ const contentStyle = {
    // {key: 'nav4', label: 'Thank it forward'},
 ];
 
-const items2 = [
+const Items2 = [
     {
         key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
         children: [
@@ -117,10 +112,17 @@ const AppHeader1 = () => {
   } = theme.useToken();
   //const [text, setText] = useState('');
   return (
-    <><Layout>
+    <>
+    <Navbar></Navbar>
+      <Routes>
+        <Route exact path='/' element={<Home />}></Route> 
+        <Route exact path='/about' element={<About />}></Route>
+        <Route exact path='/information' element={<Information />}></Route>
+      </Routes>
+    <Layout>
       <Header className="header">
         <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={items1} />
+         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={items1} /> 
       </Header>
       <Layout>
         <Sider
@@ -137,7 +139,7 @@ const AppHeader1 = () => {
               height: '100%',
               borderRight: 0,
             }}
-            items={items2} />
+            items={Items2} />
         </Sider>
         <Layout
           style={{
@@ -211,34 +213,8 @@ const AppHeader1 = () => {
         </Layout>
       </Layout>
     </Layout>
-    <div>
-      <RouterProvider router={router}/>
-
-    </div>
-    <Router></Router>
-     {<div>
-         {/* {<Link to="/">Home</Link>} */}
-         {/* <Link to="/">About</Link> */}
-      </div>
-    }
     </>
   );
 };
-
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-function render() {
-  return (
-    <button onClick={() => this.nextPath('/') }>
-      change path 
-    </button>
-  );
-}
 
 export default AppHeader1;
