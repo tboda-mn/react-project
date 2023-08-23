@@ -11,13 +11,13 @@ import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
 const { Header, Content, Sider } = Layout;
 
 const contentStyle = {
-  height: '400px',
+  height: '500px',
   color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
   width:'100%',
-  //paddingLeft:'70px',
+  // paddingRight:'70px',
 };
 
  const items1= [
@@ -165,7 +165,7 @@ const AppHeader1 = () => {
                     }} />
                   <Space
                     style={{
-                      padding: 8,
+                      padding: 80,
                     }}
                   >
                   </Space>
@@ -183,7 +183,7 @@ const AppHeader1 = () => {
           </Content>
           <Content>
             <textarea className="form-control" id="myBox" rows="8"></textarea>
-            <div>
+            <div className='reactions'>
               <Button type="primary" ghost className='pp'>Like</Button>
               <Button type="primary" ghost className='pp'>Comment</Button>
               <Button type="primary" ghost className='pp'>Share</Button>

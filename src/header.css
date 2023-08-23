@@ -16,7 +16,7 @@
 }
 .d-flex{
     margin-top: 10px;
-    margin-left: 650px;
+    margin-left: 450px;
 }
 .find{
     margin-top: 20px;
@@ -24,20 +24,24 @@
 }
 .space{
     padding-bottom: 40px;
+    padding-left: 500px;
 }
 .slick-slide{
-    margin-top: 1px;
+    margin-top: 3px;
     padding-bottom: 12px;
 }
 .photos{
     padding-bottom: 2px;
-}
-.carousel-style{
-    padding-right: 100px;
 }
 .text{
     padding-left: 400px;
 }
 .dropdown-content{
     padding-left: 400px;
+}
+.slider-container{
+    padding-right:100px;
+}
+.reactions{
+    padding-left:420px;
 }
