@@ -7,35 +7,17 @@ import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Divider} from 'antd';
 import { LaptopOutlined, CaretRightOutlined,ArrowDownOutlined,MailOutlined,PhoneOutlined,CalendarOutlined,ShoppingOutlined,UsergroupAddOutlined,MailTwoTone,PhoneTwoTone, CalendarTwoTone,SettingTwoTone,MessageTwoTone,NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, MenuOutlined } from 'antd';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
 
 const { Header, Content, Sider } = Layout;
-const router = createBrowserRouter([
-  {
-    path:"/",
-    element:<Home/>
-  },
-  {
-    path:"/About",
-    element:<About/>
-  }
- ])
 
 const contentStyle = {
-  height: '400px',
+  height: '500px',
   color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
   width:'100%',
-  //paddingLeft:'70px',
+  // paddingRight:'70px',
 };
 
  const items1= [
@@ -58,7 +40,7 @@ const contentStyle = {
    // {key: 'nav4', label: 'Thank it forward'},
 ];
 
-const items2 = [
+const Items2 = [
     {
         key: 'subnav1', label: 'Profile', icon: <UserOutlined />,
         children: [
@@ -117,10 +99,11 @@ const AppHeader1 = () => {
   } = theme.useToken();
   //const [text, setText] = useState('');
   return (
-    <><Layout>
+    <>
+    <Layout>
       <Header className="header">
         <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={items1} />
+         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={items1} /> 
       </Header>
       <Layout>
         <Sider
@@ -137,7 +120,7 @@ const AppHeader1 = () => {
               height: '100%',
               borderRight: 0,
             }}
-            items={items2} />
+            items={Items2} />
         </Sider>
         <Layout
           style={{
@@ -167,7 +150,7 @@ const AppHeader1 = () => {
                   <img src='https://i.postimg.cc/y8X3Wfqf/wallpaperflare-com-wallpaper.jpg' style={contentStyle} className='photos' />
                 </div>
               </Carousel></div>
-            <h3>What's on your mind?</h3>
+            <h3 className='text'>What's on your mind?</h3>
             <Dropdown
               menu={{
                 items,
@@ -182,7 +165,7 @@ const AppHeader1 = () => {
                     }} />
                   <Space
                     style={{
-                      padding: 8,
+                      padding: 80,
                     }}
                   >
                   </Space>
@@ -200,7 +183,7 @@ const AppHeader1 = () => {
           </Content>
           <Content>
             <textarea className="form-control" id="myBox" rows="8"></textarea>
-            <div>
+            <div className='reactions'>
               <Button type="primary" ghost className='pp'>Like</Button>
               <Button type="primary" ghost className='pp'>Comment</Button>
               <Button type="primary" ghost className='pp'>Share</Button>
@@ -211,34 +194,8 @@ const AppHeader1 = () => {
         </Layout>
       </Layout>
     </Layout>
-    <div>
-      <RouterProvider router={router}/>
-
-    </div>
-    <Router></Router>
-     {<div>
-         {/* {<Link to="/">Home</Link>} */}
-         {/* <Link to="/">About</Link> */}
-      </div>
-    }
     </>
   );
 };
-
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-function render() {
-  return (
-    <button onClick={() => this.nextPath('/') }>
-      change path 
-    </button>
-  );
-}
 
 export default AppHeader1;
